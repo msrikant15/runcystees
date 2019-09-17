@@ -1,5 +1,3 @@
-function GetElementInsideContainer(containerID, childID) {
-    var elm = document.getElementById(childID);
-    var parent = elm ? elm.parentNode : {};
-    return (parent.id && parent.id === containerID) ? elm : {};
-}
+$("#info1").click(function(){
+    console.log(document.getElementById("prod1").querySelector("#prod1"));
+});
