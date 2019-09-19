@@ -7,5 +7,6 @@ lambda:
 	$(PYTHON) create_serverless.py
 
 clean:
-	rm -f showTeeInfo.zip
+	rm -f showTeeDesc.zip
+	rm -f showTeeReviews.zip
 	rm -f writeReview.zip

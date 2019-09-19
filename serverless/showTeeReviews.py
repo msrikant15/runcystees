@@ -1,6 +1,7 @@
 import boto3
 from botocore.exceptions import ClientError
 from boto3.dynamodb.conditions import Key
+import json
 
 def showTeeReviews(id):
     try:
@@ -14,10 +15,10 @@ def showTeeReviews(id):
         if resp.get('Item') == None:
             return {"result": False}
 
-        return {"result": True, "reviews": resp['Item']['reviews']}
+        return {"result": True, "reviews": json.dumps(resp['Item']['reviews'])}
     except ClientError as e:
-        return {"result": "Error occurred"}
         print("Error occurred - showTeeReviews(", id, ") - ", e.response)
+        return {"result": "Error occurred"}
 
 def lambda_handler(event, context):
     id = ""

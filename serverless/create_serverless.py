@@ -1,6 +1,6 @@
 import os
 
-files = ["showTeeInfo.py", "writeReview.py"]
+files = ["showTeeDesc.py", "showTeeReviews.py", "writeReview.py"]
 
 try:
     # remove requests folder if exists
