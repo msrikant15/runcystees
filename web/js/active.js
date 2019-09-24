@@ -97,16 +97,16 @@
     });
 
     // :: 4.0 Testimonials Slider Active Code
-    if ($.fn.owlCarousel) {
-        $(".karl-testimonials-slides").owlCarousel({
-            items: 1,
-            margin: 0,
-            loop: true,
-            dots: true,
-            autoplay: true,
-            smartSpeed: 1200
-        });
-    }
+    // if ($.fn.owlCarousel) {
+    //     $(".karl-testimonials-slides").owlCarousel({
+    //         items: 1,
+    //         margin: 0,
+    //         loop: true,
+    //         dots: true,
+    //         autoplay: true,
+    //         smartSpeed: 1200
+    //     });
+    // }
 
     // :: 5.0 Gallery Menu Style Active Code
     $('.portfolio-menu button.btn').on('click', function () {
