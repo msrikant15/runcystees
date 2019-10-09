@@ -4,8 +4,8 @@ from boto3.dynamodb.conditions import Key
 
 def showTeeDesc(id):
     try:
-        # Credentials to access DynamoDB is associated with IAM policy 
-        # This IAM policy inturn is tied to Lambda for proper permission access
+        # Credentials to access DynamoDB is associated with IAM role 
+        # This IAM role inturn is tied to Lambda for proper permission access
         dynamodb = boto3.resource('dynamodb')
         table = dynamodb.Table('runcystees')
 
